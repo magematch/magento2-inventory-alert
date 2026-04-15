@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <cataloginventory>
+            <stock_notification>
+                <status>0</status>
+                <template>cataloginventory_stock_notification_template</template>
+                <admin_email></admin_email>
+            </stock_notification>
+        </cataloginventory>
+    </default>
+</config>

@@ -1,0 +1,44 @@
+{
+    "name": "arjundhi/module-low-stock-notification",
+    "description": "Sends low stock summary emails to admin users using a scheduled Magento cron job.",
+    "type": "magento2-module",
+    "license": "MIT",
+    "keywords": [
+        "magento",
+        "magento2",
+        "inventory",
+        "stock",
+        "notification",
+        "cron"
+    ],
+    "support": {
+        "issues": "https://github.com/arjundhi/module-low-stock-notification/issues",
+        "source": "https://github.com/arjundhi/module-low-stock-notification"
+    },
+    "require": {
+        "php": "^8.1 || ^8.2 || ^8.3 || ^8.4",
+        "magento/framework": "^103.0",
+        "magento/module-catalog": "^104.0",
+        "magento/module-catalog-inventory": "^100.4",
+        "magento/module-email": "^101.1",
+        "magento/module-reports": "^101.2"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Rameera\\LowStockNotification\\": ""
+        }
+    },
+    "extra": {
+        "map": [
+            [
+                "*",
+                "Rameera/LowStockNotification"
+            ]
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

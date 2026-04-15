@@ -1,0 +1,19 @@
+<?php
+declare(strict_types=1);
+
+namespace Rameera\LowStockNotification\Model;
+
+use Magento\Framework\ObjectManagerInterface;
+use Magento\Reports\Model\ResourceModel\Product\Lowstock\Collection;
+
+class LowStockCollectionFactory
+{
+    public function __construct(private readonly ObjectManagerInterface $objectManager)
+    {
+    }
+
+    public function create(array $data = []): Collection
+    {
+        return $this->objectManager->create(Collection::class, $data);
+    }
+}
