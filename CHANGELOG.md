@@ -9,7 +9,7 @@ and this project follows [Semantic Versioning](https://semver.org/).
 
 ### Added
 
-- Composer-ready public package metadata for `arjundhi/magento2-inventory-alert`.
+- Composer-ready public package metadata for `magematch/magento2-inventory-alert`.
 - MIT license, changelog, release checklist, and GitHub CI workflow.
 - Admin configuration defaults and improved template registration.
 

@@ -43,7 +43,7 @@ php bin/magento cache:flush
 ### Install with Composer (VCS repository)
 
 ```bash
-composer require arjundhi/magento2-inventory-alert
+composer require magematch/magento2-inventory-alert
 php bin/magento module:enable MageMatch_LowStockNotification
 php bin/magento setup:upgrade
 php bin/magento cache:flush
@@ -94,13 +94,13 @@ It validates Composer metadata, PHP syntax, and XML well-formedness.
 Stable production install:
 
 ```bash
-composer require arjundhi/magento2-inventory-alert:^1.0
+composer require magematch/magento2-inventory-alert:^1.0
 ```
 
 Staging/dev install (before first stable tag is visible):
 
 ```bash
-composer require arjundhi/magento2-inventory-alert:"dev-main@dev"
+composer require magematch/magento2-inventory-alert:"dev-main@dev"
 ```
 
 ## License
