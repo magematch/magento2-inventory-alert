@@ -6,8 +6,6 @@
 > Part of the [MageMatch](https://magematch.com) 
 > developer ecosystem
 
-# MageMatch Inventory Alert
-
 `MageMatch_LowStockNotification` monitors inventory thresholds and delivers a scheduled low-stock digest email to the configured admin recipient.
 
 ## Features
@@ -18,36 +16,6 @@
 - Swappable transactional email template.
 - Zero legacy code — built on `DataPatchInterface`, constructor promotion, and `declare(strict_types=1)`.
 - Compatible with Magento 2.4.4+ and PHP 8.1 through 8.4.
-
-## Compatibility
-
-- Magento Open Source / Adobe Commerce `2.4.4` and later in the `2.4.x` line.
-- PHP `8.1`, `8.2`, `8.3`, and `8.4`.
-
-## Installation
-
-### Install from app/code
-
-Place the module under:
-
-`app/code/MageMatch/LowStockNotification`
-
-Then run:
-
-```bash
-php bin/magento module:enable MageMatch_LowStockNotification
-php bin/magento setup:upgrade
-php bin/magento cache:flush
-```
-
-### Install with Composer (VCS repository)
-
-```bash
-composer require magematch/magento2-inventory-alert
-php bin/magento module:enable MageMatch_LowStockNotification
-php bin/magento setup:upgrade
-php bin/magento cache:flush
-```
 
 ## Configuration
 
@@ -102,10 +70,6 @@ Staging/dev install (before first stable tag is visible):
 ```bash
 composer require magematch/magento2-inventory-alert:"dev-main@dev"
 ```
-
-## License
-
-This project is licensed under the MIT License. See `LICENSE` for details.
 
 ---
 ## Installation
